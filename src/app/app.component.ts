@@ -30,8 +30,9 @@ export class AppComponent implements OnInit {
     drrContainer.appendChild(spanText);
     this.grid.appendChild(drrContainer);
 
+    setTimeout(() => spanText.focus(), 2000);
     //trying to simulate a double click to enable the text edit mode
-    drrContainer.dispatchEvent(this.helperCreateDbClickEvent());
+    // drrContainer.dispatchEvent(this.helperCreateDbClickEvent());
 
   }
 
